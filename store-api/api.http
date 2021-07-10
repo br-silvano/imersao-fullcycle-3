@@ -41,7 +41,7 @@ Content-Type: application/json
 
 {
     "credit_card": {
-      "number": "1111111111111103",
+      "number": "7777777777777777",
       "name": "Silvano Souza",
       "expiration_month": 7,
       "expiration_year": 2021,
@@ -49,8 +49,8 @@ Content-Type: application/json
     },
        "items":  [
       {
-          "quantity": 2, 
-          "product_id": "8589725d-8e49-49f9-8769-7de2cf90b244"
+          "quantity": 1, 
+          "product_id": "e84f536d-76f4-4f84-b3b6-a3bfeab930c1"
       }
    ]
 }
