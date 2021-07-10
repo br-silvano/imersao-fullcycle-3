@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    container_name: appbank
+    container_name: imersao-fullcycle-3-bank-backend-service-grpc
     build: .
     command: go run main.go
     ports:
