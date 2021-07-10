@@ -1,0 +1,17 @@
+###
+GET http://localhost:3002/credit-cards
+
+
+###
+POST http://localhost:3002/credit-cards
+Content-Type: application/json
+
+{
+    "name": "Silvano Souza",
+    "number": "7777777777777777"
+}
+
+## 7777777777777777
+
+###
+GET http://localhost:3002/credit-cards/7777777777777777/invoices
