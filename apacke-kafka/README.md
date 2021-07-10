@@ -6,6 +6,20 @@ Repositório do Apache Kafka
 
 ## Rodar a aplicação
 
+### Configurar Elasticsearch
+
+```
+sudo nano /etc/sysctl.conf
+vm.max_map_count=262144
+grep vm.max_map_count /etc/sysctl.conf
+vm.max_map_count=262144
+sudo sysctl -w vm.max_map_count=262144
+
+mkdir es01
+sudo chmod g+rwx es01
+sudo chgrp 0 es01
+```
+
 ### Configurar /etc/hosts
 
 A comunicação entre as aplicações se dá de forma direta através da rede da máquina.
@@ -24,9 +38,3 @@ docker-compose up
 ```
 
 Quando parar os containers do Kafka, lembre-se antes de rodar o `docker-compose up`, rodar o `docker-compose down` para limpar o armazenamento, senão lançará erro ao subir novamente.
-
-### Para Windows 
-
-Lembrar de instalar o WSL2 e Docker. Vejo o vídeo: [https://www.youtube.com/watch?v=j6ioaes03oY](https://www.youtube.com/watch?v=j6ioaes03oY) 
-
-Siga o guia rápido de instalação: [https://github.com/codeedu/wsl2-docker-quickstart](https://github.com/codeedu/wsl2-docker-quickstart) 
